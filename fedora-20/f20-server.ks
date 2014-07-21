@@ -1,5 +1,11 @@
 # Fedora 20 Server kickstart for XenServer
 # branch: develop
+#
+# install source:
+# http://mirror.rackspace.com/fedora/releases/20/Fedora/x86_64/os
+#
+# boot args string:
+# console=hvc0 utf8 nogpt noipv6 ks=https://raw.githubusercontent.com/rymo/xenserver-kickstart/develop/fedora-20/f20-server.ks
 ##########################################
 
 # Install, not upgrade
@@ -49,13 +55,12 @@ bootloader --location=partition --timeout=5 --driveorder=xvda --append="console=
 halt
 
 # Minimal package set
-%packages --excludedocs
+%packages --excludedocs --ignoremissing
 @standard
 man
 nano
 deltarpm
 yum-plugin-fastestmirror
-realmd
 net-tools
 -dracut-config-rescue
 -fprintd-pam
