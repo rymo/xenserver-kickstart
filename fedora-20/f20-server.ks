@@ -2,7 +2,7 @@
 # branch: develop
 #
 # install source:
-# http://mirror.rackspace.com/fedora/releases/20/Fedora/x86_64/os
+# http://mirrors.kernel.org/fedora/releases/20/Fedora/x86_64/os
 #
 # boot args string:
 # console=hvc0 utf8 nogpt noipv6 ks=https://raw.githubusercontent.com/rymo/xenserver-kickstart/develop/fedora-20/f20-server.ks
