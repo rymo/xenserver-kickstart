@@ -6,7 +6,7 @@
 install
 
 # Install from a friendly mirror and add updates
-url --mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=fedora-20&arch=$basearch
+url --url=http://mirrors.kernel.org/fedora/releases/20/Everything/$basearch/os/
 repo --name=updates
 
 # Language and keyboard setup
@@ -52,7 +52,7 @@ halt
 %packages --excludedocs
 @standard
 man
-vim
+nano
 deltarpm
 yum-plugin-fastestmirror
 realmd
