@@ -58,10 +58,10 @@ halt
 %packages --excludedocs --ignoremissing
 @standard
 man
-nano
-deltarpm
+-deltarpm
 yum-plugin-fastestmirror
 net-tools
+-realmd
 -dracut-config-rescue
 -fprintd-pam
 -wireless-tools
